@@ -1,0 +1,931 @@
+Address,Area,Dorms,Baths,Parking Slots,Condominio,IPTU,Price
+"Rua das Laranjeiras, Laranjeiras","
+        71 - 201 m²
+        ","
+        2 - 4 
+        ","
+        1 
+        ",NULL,NULL,NULL,"
+    Sob consulta
+  "
+"Rua Voluntários da Pátria, Botafogo","
+        113 - 116 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",NULL,NULL,"
+    R$ 1.665.000
+    /venda"
+"Rua Pereira da Silva, Laranjeiras","
+        73 - 124 m²
+        ","
+        2 - 3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 960.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        160 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 1.200,R$ 433,"
+    R$ 1.800.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        100 m²
+        ","
+        2 
+        ","
+        1 
+        ","
+        2 
+        ",R$ 950,R$ 280,"
+    R$ 1.050.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        78 m²
+        ","
+        2 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 790,R$ 2.202,"
+    R$ 949.999
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        102 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.100,R$ 214,"
+    R$ 973.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        130 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.650,R$ 295,"
+    R$ 1.150.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        78 m²
+        ","
+        2 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 796,R$ 1.920,"
+    R$ 1.000.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        165 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.000,R$ 350,"
+    R$ 1.680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        78 m²
+        ","
+        2 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 760,R$ 1.920,"
+    R$ 990.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        145 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",NULL,R$ 350,"
+    R$ 1.050.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        85 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 796,R$ 192,"
+    R$ 1.110.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        130 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.988,R$ 252,"
+    R$ 1.090.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        70 m²
+        ","
+        2 
+        ","
+        2 
+        ",NULL,R$ 750,R$ 1.400,"
+    R$ 700.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        80 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 790,R$ 2.000,"
+    R$ 950.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        80 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 760,R$ 2.370,"
+    R$ 930.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        78 m²
+        ","
+        2 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 790,R$ 2.310,"
+    R$ 990.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.900,R$ 4.200,"
+    R$ 1.550.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        90 m²
+        ","
+        2 
+        ","
+        2 
+        ",NULL,R$ 1.195,R$ 201,"
+    R$ 820.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        80 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 760,R$ 237,"
+    R$ 950.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        78 m²
+        ","
+        2 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 790,R$ 2.230,"
+    R$ 920.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        94 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.230,R$ 2.200,"
+    R$ 900.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        86 m²
+        ","
+        2 
+        ","
+        1 
+        ","
+        1 
+        ",R$ 700,R$ 1.920,"
+    R$ 1.200.000
+    /venda"
+"Rua Urbano Santos, Urca","
+        163 - 165 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.855.000
+    /venda"
+"Avenida Lauro Sodré, Botafogo","
+        72 - 339 m²
+        ","
+        2 - 4 
+        ","
+        1 - 2 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Avenida Lauro Sodré, Botafogo","
+        72 m²
+        ","
+        2 - 3 
+        ","
+        1 - 3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.204.900
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        100 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.100,R$ 2.301,"
+    R$ 980.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        2 
+        ",R$ 2.500,R$ 4.450,"
+    R$ 1.450.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        80 m²
+        ","
+        2 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 760,NULL,"
+    R$ 920.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        130 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.900,R$ 390,"
+    R$ 1.090.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        160 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 1.170,R$ 433,"
+    R$ 1.980.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.520,R$ 4.231,"
+    R$ 1.350.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        102 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.100,R$ 2.301,"
+    R$ 980.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.100,R$ 4.200,"
+    R$ 1.680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        130 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.988,R$ 252,"
+    R$ 1.090.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        167 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.700,R$ 3.450,"
+    R$ 1.600.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.900,R$ 4.206,"
+    R$ 1.680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.750,R$ 4.680,"
+    R$ 1.850.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        70 m²
+        ","
+        2 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 750,R$ 1.450,"
+    R$ 700.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        116 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 1.400,R$ 3.257,"
+    R$ 1.300.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        1 
+        ","
+        2 
+        ",R$ 2.300,R$ 4.444,"
+    R$ 1.700.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        170 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.632,NULL,"
+    R$ 1.650.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        114 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        2 
+        ",R$ 2.000,R$ 2.471,"
+    R$ 1.495.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.700,R$ 421,"
+    R$ 1.680.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        102 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.100,R$ 2.140,"
+    R$ 980.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        102 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.200,R$ 2.301,"
+    R$ 1.200.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        78 m²
+        ","
+        2 
+        ","
+        1 
+        ","
+        1 
+        ",R$ 680,R$ 2.368,"
+    R$ 1.100.000
+    /venda"
+"Rua Dona Mariana, Botafogo","
+        109 - 209 m²
+        ","
+        3 - 4 
+        ","
+        2 - 4 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Sorocaba, Botafogo","
+        101 - 129 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.194.000
+    /venda"
+"Rua São Clemente, Botafogo","
+        244 m²
+        ","
+        2 - 4 
+        ","
+        2 - 4 
+        ","
+        1 - 3 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Barão de Icaraí, Flamengo","
+        70 m²
+        ","
+        2 
+        ","
+        11 
+        ",NULL,R$ 650,NULL,"
+    R$ 750.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        167 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.700,R$ 350,"
+    R$ 1.680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.700,R$ 4.371,"
+    R$ 1.680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.260,R$ 3.909,"
+    R$ 1.250.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        167 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.710,R$ 345,"
+    R$ 1.650.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        130 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.000,R$ 2.653,"
+    R$ 1.350.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        111 m²
+        ","
+        3 
+        ","
+        1 
+        ","
+        2 
+        ",NULL,NULL,"
+    R$ 680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        100 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.100,R$ 2.140,"
+    R$ 980.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        130 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.936,R$ 307,"
+    R$ 1.050.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        190 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.700,R$ 3.450,"
+    R$ 1.680.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.250,NULL,"
+    R$ 1.350.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        167 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.750,R$ 4.680,"
+    R$ 1.650.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.780,R$ 4.260,"
+    R$ 1.680.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.450,NULL,"
+    R$ 1.600.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.315,NULL,"
+    R$ 1.340.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.450,R$ 4.444,"
+    R$ 1.500.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        157 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        2 
+        ",R$ 2.325,R$ 4.440,"
+    R$ 1.550.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        85 m²
+        ","
+        2 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 796,R$ 1.920,"
+    R$ 1.120.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        68 m²
+        ","
+        2 
+        ","
+        1 
+        ",NULL,R$ 750,R$ 1.164,"
+    R$ 730.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 2.319,R$ 4.444,"
+    R$ 1.350.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.300,R$ 4.000,"
+    R$ 1.500.000
+    /venda"
+"Rua Henrique de Novais, Botafogo","
+        78 - 113 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Real Grandeza, Botafogo","
+        66 m²
+        ","
+        2 - 3 
+        ","
+        1 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.012.000
+    /venda"
+"Rua Pinheiro Guimarães, Botafogo","
+        122 - 253 m²
+        ","
+        4 
+        ","
+        4 
+        ","
+        2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.400,R$ 4.444,"
+    R$ 3.900.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.450,R$ 4.013,"
+    R$ 1.350.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        150 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 2.260,R$ 4.909,"
+    R$ 1.250.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        65 m²
+        ","
+        2 
+        ","
+        2 
+        ",NULL,R$ 641,R$ 900,"
+    R$ 850.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        167 m²
+        ","
+        3 
+        ","
+        3 
+        ",NULL,R$ 1.700,R$ 3.445,"
+    R$ 1.680.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        175 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.900,R$ 4.206,"
+    R$ 1.800.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        140 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 2.400,R$ 4.000,"
+    R$ 1.500.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        140 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.400,R$ 400,"
+    R$ 1.500.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        80 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 760,R$ 2.844,"
+    R$ 980.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        102 m²
+        ","
+        3 
+        ","
+        1 
+        ","
+        1 
+        ",R$ 1.100,R$ 2.140,"
+    R$ 980.000
+    /venda"
+"Rua Barão de Icaraí, Flamengo","
+        157 m²
+        ","
+        3 
+        ","
+        3 
+        ",NULL,R$ 2.355,R$ 3.990,"
+    R$ 1.250.000
+    /venda"

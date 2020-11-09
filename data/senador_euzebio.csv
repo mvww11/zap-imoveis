@@ -1,0 +1,910 @@
+Address,Area,Dorms,Baths,Parking Slots,Condominio,IPTU,Price
+"Rua das Laranjeiras, Laranjeiras","
+        71 - 201 m²
+        ","
+        2 - 4 
+        ","
+        1 
+        ",NULL,NULL,NULL,"
+    Sob consulta
+  "
+"Rua Pereira da Silva, Laranjeiras","
+        73 - 124 m²
+        ","
+        2 - 3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 960.000
+    /venda"
+"Rua Voluntários da Pátria, Botafogo","
+        113 - 116 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",NULL,NULL,"
+    R$ 1.665.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        155 m²
+        ","
+        3 
+        ","
+        3 
+        ",NULL,R$ 1.200,R$ 3.450,"
+    R$ 1.050.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        210 m²
+        ","
+        4 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 2.000,R$ 460,"
+    R$ 2.300.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.246,R$ 280,"
+    R$ 1.080.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.800,NULL,"
+    R$ 1.375.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        80 m²
+        ","
+        2 
+        ","
+        2 
+        ",NULL,R$ 650,R$ 133,"
+    R$ 700.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        160 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.550,R$ 350,"
+    R$ 1.780.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        50 m²
+        ","
+        1 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 784,R$ 1.800,"
+    R$ 715.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        65 m²
+        ","
+        1 
+        ","
+        2 
+        ",NULL,R$ 667,R$ 1.500,"
+    R$ 600.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        125 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.490,R$ 258,"
+    R$ 1.249.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        167 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.500,R$ 390,"
+    R$ 995.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        66 m²
+        ","
+        1 
+        ","
+        2 
+        ",NULL,R$ 700,R$ 1.632,"
+    R$ 600.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        150 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 900,NULL,"
+    R$ 1.700.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.198,R$ 2.832,"
+    R$ 1.080.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        155 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.570,R$ 337,"
+    R$ 1.830.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        90 m²
+        ","
+        2 
+        ","
+        2 
+        ",NULL,R$ 523,R$ 1.500,"
+    R$ 920.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        66 m²
+        ","
+        1 
+        ","
+        2 
+        ",NULL,R$ 638,R$ 592,"
+    R$ 650.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        190 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 1.900,NULL,"
+    R$ 1.750.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        5 
+        ","
+        2 
+        ",R$ 2.200,NULL,"
+    R$ 1.780.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        3 
+        ","
+        2 
+        ",NULL,R$ 1.198,R$ 243,"
+    R$ 1.100.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        3 
+        ","
+        2 
+        ",NULL,R$ 1.189,R$ 2.650,"
+    R$ 1.080.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.780,NULL,"
+    R$ 1.500.000
+    /venda"
+"Rua Urbano Santos, Urca","
+        163 - 165 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.855.000
+    /venda"
+"Avenida Lauro Sodré, Botafogo","
+        72 - 339 m²
+        ","
+        2 - 4 
+        ","
+        1 - 2 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Avenida Lauro Sodré, Botafogo","
+        72 m²
+        ","
+        2 - 3 
+        ","
+        1 - 3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.204.900
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.780,NULL,"
+    R$ 1.500.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.171,R$ 537,"
+    R$ 1.800.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        130 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.500,R$ 280,"
+    R$ 1.245.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        70 m²
+        ","
+        1 
+        ","
+        1 
+        ",NULL,R$ 675,R$ 1.632,"
+    R$ 600.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        160 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.538,NULL,"
+    R$ 1.730.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        2 
+        ","
+        1 
+        ",NULL,R$ 1.246,R$ 288,"
+    R$ 1.100.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        155 m²
+        ","
+        2 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 1.800,R$ 344,"
+    R$ 1.795.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        103 m²
+        ","
+        2 
+        ","
+        3 
+        ",NULL,R$ 533,R$ 139,"
+    R$ 990.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        94 m²
+        ","
+        3 
+        ","
+        1 
+        ","
+        1 
+        ",R$ 1.200,R$ 1.840,"
+    R$ 850.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        2 
+        ","
+        2 
+        ",NULL,R$ 1.189,R$ 2.652,"
+    R$ 1.100.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        167 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.200,R$ 4.190,"
+    R$ 1.000.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        86 m²
+        ","
+        2 
+        ","
+        1 
+        ","
+        1 
+        ",R$ 1.350,NULL,"
+    R$ 700.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        155 m²
+        ","
+        3 
+        ","
+        2 
+        ",NULL,R$ 1.490,R$ 3.165,"
+    R$ 1.100.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        94 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.400,R$ 1.900,"
+    R$ 860.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        134 m²
+        ","
+        2 
+        ","
+        1 
+        ",NULL,R$ 1.246,R$ 288,"
+    R$ 1.100.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.170,R$ 536,"
+    R$ 1.750.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        155 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.570,R$ 337,"
+    R$ 1.800.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        134 m²
+        ","
+        3 
+        ","
+        1 
+        ",NULL,R$ 1.346,R$ 2.882,"
+    R$ 1.080.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        176 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.000,R$ 3.841,"
+    R$ 1.800.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        2 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.500,R$ 5.367,"
+    R$ 1.800.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        137 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.450,R$ 216,"
+    R$ 1.800.000
+    /venda"
+"Rua Dona Mariana, Botafogo","
+        109 - 209 m²
+        ","
+        3 - 4 
+        ","
+        2 - 4 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Sorocaba, Botafogo","
+        101 - 129 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.194.000
+    /venda"
+"Rua São Clemente, Botafogo","
+        244 m²
+        ","
+        2 - 4 
+        ","
+        2 - 4 
+        ","
+        1 - 3 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Senador Euzebio, Flamengo","
+        137 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.450,R$ 216,"
+    R$ 1.800.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        155 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.800,R$ 3.775,"
+    R$ 1.800.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        175 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        3 
+        ",R$ 2.000,R$ 4.350,"
+    R$ 1.750.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        167 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.800,R$ 3.744,"
+    R$ 995.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        170 m²
+        ","
+        3 
+        ","
+        2 
+        ",NULL,R$ 1.352,R$ 3.900,"
+    R$ 1.200.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        94 m²
+        ","
+        3 
+        ","
+        1 
+        ","
+        1 
+        ",R$ 1.473,R$ 4.500,"
+    R$ 1.250.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        134 m²
+        ","
+        3 
+        ","
+        1 
+        ",NULL,R$ 1.084,R$ 2.000,"
+    R$ 1.050.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        200 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.200,R$ 4.000,"
+    R$ 2.780.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.500,NULL,"
+    R$ 2.200.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        80 m²
+        ","
+        2 
+        ","
+        3 
+        ",NULL,R$ 523,R$ 1.500,"
+    R$ 920.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        1 
+        ",R$ 2.600,R$ 4.000,"
+    R$ 2.700.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        147 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.734,R$ 2.500,"
+    R$ 1.600.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        55 m²
+        ","
+        1 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 1.300,R$ 1.200,"
+    R$ 850.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        94 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.420,R$ 233,"
+    R$ 850.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        96 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.400,R$ 200,"
+    R$ 935.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        2 
+        ",R$ 2.200,R$ 3.400,"
+    R$ 1.995.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        200 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.200,R$ 400,"
+    R$ 2.780.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        96 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.450,R$ 2.200,"
+    R$ 1.060.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.750,R$ 5.498,"
+    R$ 1.750.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        155 m²
+        ","
+        3 
+        ","
+        1 
+        ",NULL,R$ 1.496,R$ 3.165,"
+    R$ 1.200.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.680,R$ 4.936,"
+    R$ 2.850.000
+    /venda"
+"Rua Henrique de Novais, Botafogo","
+        78 - 113 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    Sob consulta
+  "
+"Rua Real Grandeza, Botafogo","
+        66 m²
+        ","
+        2 - 3 
+        ","
+        1 
+        ","
+        1 - 2 
+        ",NULL,NULL,"
+    R$ 1.012.000
+    /venda"
+"Rua das Marrecas, Centro","
+        32 - 66 m²
+        ","
+        1 
+        ","
+        1 
+        ",NULL,NULL,NULL,"
+    Sob consulta
+  "
+"Rua Senador Euzebio, Flamengo","
+        176 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.680,R$ 4.936,"
+    R$ 2.850.000
+    /venda"
+"Flamengo, Rio de Janeiro","
+        155 m²
+        ","
+        3 
+        ","
+        3 
+        ",NULL,R$ 1.490,R$ 360,"
+    R$ 1.150.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.600,R$ 5.300,"
+    R$ 1.750.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        230 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        2 
+        ",R$ 2.500,R$ 4.670,"
+    R$ 2.710.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        139 m²
+        ","
+        3 
+        ","
+        3 
+        ",NULL,R$ 1.700,R$ 2.714,"
+    R$ 1.600.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        200 m²
+        ","
+        3 
+        ","
+        2 
+        ",NULL,R$ 1.800,R$ 2.400,"
+    R$ 1.899.994
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        2 
+        ",R$ 2.700,R$ 550,"
+    R$ 1.730.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        4 
+        ","
+        2 
+        ",R$ 2.600.000,R$ 4.936.000,"
+    R$ 2.700.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        180 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 2.500,NULL,"
+    R$ 2.200.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        190 m²
+        ","
+        3 
+        ","
+        2 
+        ","
+        1 
+        ",R$ 2.500,R$ 550,"
+    R$ 2.700.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        155 m²
+        ","
+        2 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 1.800,R$ 4.008,"
+    R$ 1.800.000
+    /venda"
+"Rua Senador Euzebio, Flamengo","
+        174 m²
+        ","
+        3 
+        ","
+        3 
+        ","
+        1 
+        ",R$ 450,R$ 2.500,"
+    R$ 2.200.000
+    /venda"
