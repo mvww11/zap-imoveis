@@ -37,11 +37,11 @@ As features que conseguimos extrair são:
 |Price                          |float     | valor de venda anunciado do imóvel |
 |Address                      |string    | logradouro onde o imóvel está situado |
 |Area                         |float    | Área do imóvel, em m²|
-|Dorms                       |int    | Quantidade de dormitórios no imóvel|
 |Baths                        |int | Quantidade de banheiros no imóvel |
-|Parking Slots              |int    | Quantidade de vagas de garagem na escritura do imóvel |
 |Condominio             |float | Valor da cota de condomínio do imóvel, em R$ |
+|Dorms                       |int    | Quantidade de dormitórios no imóvel|
 |IPTU                            |float    | Valor da cota de IPTU do imóvel, em R$ |
+|Parking Slots              |int    | Quantidade de vagas de garagem na escritura do imóvel |
 
 Ao final do data scrappping, ficamos com 2889 imóveis em nosso data set.
 
