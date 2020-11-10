@@ -34,17 +34,12 @@ As features que conseguimos extrair são:
 |:------------------------------|:---------|:-----------|
 |Price                          |float     | valor de venda anunciado do imóvel |
 |Address                      |string    | logradouro onde o imóvel está situado |
-|adults                         |double    | Number of adults|
-|children                       |double    | Number of children|
-|country                        |character | Country of origin. Categories are represented in the ISO 3155–3:2013 format |
-|is_repeated_guest              |double    | Value indicating if the booking name was from a repeated guest (1) or not (0) |
-|reserved_room_type             |character | Code of room type reserved. Code is presented instead of designation for anonymity reasons |
-|adr                            |double    | Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights |
-|total_of_special_requests      |double    | Number of special requests made by the customer (e.g. twin bed or high floor)|
-
-fonte: adaptado do [repo](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-02-11).
-
-A variável in_canceled informa se a reserva foi cancelada (in_canceled = 1) ou não (in_canceled = 0). Essa é a variável dependente, aquela que queremos que nosso modelo preveja.
+|Area                         |float    | Área do imóvel, em m²|
+|Dorms                       |int    | Quantidade de dormitórios no imóvel|
+|Baths                        |int | Quantidade de banheiros no imóvel |
+|Parking Slots              |int    | Quantidade de vagas de garagem na escritura do imóvel |
+|Condominio             |float | Valor da cota de condomínio do imóvel, em R$ |
+|IPTU                            |float    | Valor da cota de IPTU do imóvel, em R$ |
 
 ## Data Cleaning (tratando missing data)
 Após carregar os dados, precisei fazer uma série de transformações para que ficassem apropriados para serem utilizados no treinamento dos modelos. Confira a etapa completa em [missing_data.ipynb](missing_data.ipynb).
