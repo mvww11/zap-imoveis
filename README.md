@@ -5,7 +5,7 @@ Nessa página você encontra um resumo do projeto. A versão completa está sepa
 
 Nosso cliente possui um imóvel situado na Avenida Oswaldo Cruz, Flamengo, RJ. Ele quer saber qual é o valor de venda desse imóvel. Para isso, coletamos dados no [zapimoveis.com.br](https://www.zapimoveis.com.br/) sobre outros apartamentos à venda na mesma região, e treinamos um modelo de Gradient Boosting para prever o valor do imóvel, com base em informações como área do imóvel, logradouro, número de quartos e vagas de garagem.
 
-Nosso modelo ótimo alcançou um erro absoluto médio aproximado de R$150 mil. Para dar dimensão, a média do valor dos imóveis em nosso dataset é de R$1,5 milhão.
+Nosso modelo ótimo alcançou um erro absoluto médio aproximado de R$150 mil. Para dar dimensão, a média do valor dos imóveis em nosso data set é de R$1,5 milhão.
 
 A previsão que o modelo fez para o imóvel de nosso cliente foi de R$1,18 milhão.
 
@@ -29,8 +29,10 @@ A previsão que o modelo fez para o imóvel de nosso cliente foi de R$1,18 milh�
 ## Obtenção dos dados
 Para obter os dados, fizemos data scrapping no site de classificados de imóveis [zapimoveis.com.br](https://www.zapimoveis.com.br/). Utilizamos a biblioteca beautifulsoup, que extrai as informações a partir do HTML da página. O procedimento completo pode ser visto no arquivo [zap scrapping.ipynb](zap%20scrapping.ipynb).
 
+Escolhemos coletar apenas imóveis situados na própria Avenida Oswaldo Cruz ou em ruas próximas, pois seriam estatísticamente próximas ao tipo de imóvel que queremos modelar.
+
 As features que conseguimos extrair são:
-|variable                       |class     |description |
+|Variável                       |Tipo     |Descrição |
 |:------------------------------|:---------|:-----------|
 |Price                          |float     | valor de venda anunciado do imóvel |
 |Address                      |string    | logradouro onde o imóvel está situado |
@@ -41,13 +43,17 @@ As features que conseguimos extrair são:
 |Condominio             |float | Valor da cota de condomínio do imóvel, em R$ |
 |IPTU                            |float    | Valor da cota de IPTU do imóvel, em R$ |
 
-## Data Cleaning (tratando missing data)
-Após carregar os dados, precisei fazer uma série de transformações para que ficassem apropriados para serem utilizados no treinamento dos modelos. Confira a etapa completa em [missing_data.ipynb](missing_data.ipynb).
-* Removi cerca de 30 data points continham campos nulos na coluna Country.
-* Removi a coluna Company, que possuía mais de 90% de missing data.
-* Removi 324 reservas que possuíam duração de hospedagem de 0 dias.
-* Removi 99 reservas que tinham 0 pessoas associadas (nenhum adulto, criança ou bebê).
-* Transformei o Data type de features categóricas de string para número inteiro.
+Ao final do data scrappping, ficamos com 2889 imóveis em nosso data set.
+
+## Data Cleaning and Wrangling
+Após extrair os dados, precisei fazer uma série de transformações para que ficassem apropriados para serem utilizados na análise exploratória e no treinamento dos modelos. Confira a etapa completa em [data wrangling.ipynb](data%20wrangling.ipynb).
+* Removi cerca de 790 imóveis que estavam fora da nossa região de interesse. Acabaram aparecendo em nosso data set porque o Zap Imóveis inclui no resultado diversos anúncios patrocinados que não satisfazem os critérios do filtro da busca.
+* Diversos valores do data set continham caracteres de formatação indesejados, como os símbolos "\n", "R$" ou "m²". Eliminei esses símbolos, deixando apenas os valores relevantes.
+* Todos os nossos valores estavam como string. Converti as features numéricas para datatypes do tipo int ou float.
+* Removi 92 linhas duplicadas, que acabaram aparecendo em nosso data set porque anúncios patrocinados são mostrados em mais de uma página do resultado da busca do Zap Imóveis.
+* Cerca de 35% dos dados sobre Vagas de Garagem eram nulos. Transformei-os em valores zero. Isso porque, no Zap, apartamentos que não possuem vagas de garagem simplesmente não exibem essa informação no anúncio. Desse modo, nosso scrapper não pôde encontrá-la.
+* Removi cerca de 100 apartamentos que não possuíam informações sobre Quantidade de banheiros, quartos, ou valor do condomínio.
+* Após o Data Cleaning, ficamos com 1922 apartamentos em nosso data set.
 
 ## Análise Exploratória de Dados e Feature Engineering
 Após o tratamento de missing data, ficamos com 78879 data points. Entre essas reservas, 41% foram canceladas. Isso indica que o cancelamento de reservas tem um impacto muito grande no business. Se conseguirmos diminuir esse percentual, o potencial de geração de lucro para o negócio é enorme.
