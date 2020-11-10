@@ -1,7 +1,7 @@
 # Regressão: Estimando o valor de venda de um imóvel
 Esse é um projeto completo de data science: Data Scrapping com BeautifulSoup do classificado de imóveis [zapimoveis.com.br](https://www.zapimoveis.com.br/), tratamento de missing data, análise exploratória de dados, modelagem, otimização dos hiperparâmetros e explicação das decisões do modelo.
 
-Nessa página você encontra um resumo do projeto. A versão completa está separada nos arquivos [zap scrapping.ipynb](zap&#32scrapping.ipynb), [missing_data.ipynb](missing_data.ipynb), [EDA.ipynb](EDA.ipynb), [modeling.ipynb](modeling.ipynb), [explainability.ipynb](explainability.ipynb).
+Nessa página você encontra um resumo do projeto. A versão completa está separada nos arquivos [zap scrapping.ipynb](zap%20scrapping.ipynb), [missing_data.ipynb](missing_data.ipynb), [EDA.ipynb](EDA.ipynb), [modeling.ipynb](modeling.ipynb), [explainability.ipynb](explainability.ipynb).
 
 Criaremos um modelo que tentará prever se uma reserva de hotel será cancelada com base em cerca de 60 informações disponíveis sobre a reserva, como número de adultos, quantidade de diárias e tempo de estadia.
 
