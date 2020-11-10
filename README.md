@@ -33,7 +33,7 @@ As features que conseguimos extrair são:
 |variable                       |class     |description |
 |:------------------------------|:---------|:-----------|
 |Price                          |float     | valor de venda anunciado do imóvel |
-|lead_time                      |double    | Number of days that elapsed between the entering date of the booking into the PMS and the arrival date |
+|Address                      |string    | logradouro onde o imóvel está situado |
 |adults                         |double    | Number of adults|
 |children                       |double    | Number of children|
 |country                        |character | Country of origin. Categories are represented in the ISO 3155–3:2013 format |
