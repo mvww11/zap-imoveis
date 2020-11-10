@@ -1,5 +1,5 @@
 # Regressão: Estimando o valor de venda de um imóvel
-Esse é um projeto completo de data science: Data Scrapping com BeautifulSoup no [zapimoveis.com.br](https://www.zapimoveis.com.br/), tratamento de missing data, análise exploratória de dados, modelagem, otimização dos hiperparâmetros e explicação das decisões do modelo.
+Esse é um projeto completo de data science. Inclui etapas como data Scrapping com BeautifulSoup no [zapimoveis.com.br](https://www.zapimoveis.com.br/), tratamento de missing data, análise exploratória de dados, modelagem, otimização dos hiperparâmetros e explicação das decisões do modelo.
 
 Nessa página você encontra um resumo do projeto. A versão completa está separada nos arquivos [zap scrapping.ipynb](zap%20scrapping.ipynb), [data wrangling.ipynb](data%20wrangling.ipynb), [EDA.ipynb](EDA.ipynb) e [zap-modelling.ipynb](zap-modelling.ipynb).
 
@@ -22,18 +22,17 @@ A previsão que o modelo fez para o imóvel de nosso cliente foi de R$1,18 milh�
 
 ## Recursos utilizados
 **Python**: Versão 3.7<br>
-**Pacotes Python**: numpy, pandas, matplotlib, seaborn, xgboost, hyperopt, joblib, shap<br>
-**Serverless framework para deploy no AWS Lambda**: https://www.serverless.com/<br>
+**Pacotes Python**: beautifulsoup, numpy, pandas, matplotlib, seaborn, xgboost, hyperopt, joblib, shap<br>
 **Bayesian optimization**: [[1]](https://towardsdatascience.com/automated-machine-learning-hyperparameter-tuning-in-python-dfda59b72f8a) [[2]](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-ex.html)<br>
 **Explicando o modelo com SHAP**: [[1]](https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83) [[2]](https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30) [[3]](https://towardsdatascience.com/black-box-models-are-actually-more-explainable-than-a-logistic-regression-f263c22795d) [[4]](https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d)
 
 ## Obtenção dos dados
-Os dados foram disponibilizados no artigo [Hotel booking demand datasets](https://www.sciencedirect.com/science/article/pii/S2352340918315191) e coletados [aqui](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-02-11). São cerca de 80 mil reservas feitas num hotel situado na cidade de Lisboa, Portugal, entre os anos de 2015 e 2017.
+Para obter os dados, fizemos data scrapping no site de classificados de imóveis [zapimoveis.com.br](https://www.zapimoveis.com.br/). Utilizamos a biblioteca beautifulsoup, que extrai as informações a partir do HTML da página. O procedimento completo pode ser visto no arquivo [zap scrapping.ipynb](zap%20scrapping.ipynb).
 
-Exemplos de features disponíveis:
+As features que conseguimos extrair são:
 |variable                       |class     |description |
 |:------------------------------|:---------|:-----------|
-|is_canceled                    |double    | Value indicating if the booking was canceled (1) or not (0) |
+|Price                          |float     | valor de venda anunciado do imóvel |
 |lead_time                      |double    | Number of days that elapsed between the entering date of the booking into the PMS and the arrival date |
 |adults                         |double    | Number of adults|
 |children                       |double    | Number of children|
