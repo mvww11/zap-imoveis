@@ -1,11 +1,13 @@
 # Regressão: Estimando o valor de venda de um imóvel
-Esse é um projeto completo de data science: Data Scrapping com BeautifulSoup do classificado de imóveis [zapimoveis.com.br](https://www.zapimoveis.com.br/), tratamento de missing data, análise exploratória de dados, modelagem, otimização dos hiperparâmetros e explicação das decisões do modelo.
+Esse é um projeto completo de data science: Data Scrapping com BeautifulSoup no [zapimoveis.com.br](https://www.zapimoveis.com.br/), tratamento de missing data, análise exploratória de dados, modelagem, otimização dos hiperparâmetros e explicação das decisões do modelo.
 
-Nessa página você encontra um resumo do projeto. A versão completa está separada nos arquivos [zap scrapping.ipynb](zap%20scrapping.ipynb), [missing_data.ipynb](missing_data.ipynb), [EDA.ipynb](EDA.ipynb), [modeling.ipynb](modeling.ipynb), [explainability.ipynb](explainability.ipynb).
+Nessa página você encontra um resumo do projeto. A versão completa está separada nos arquivos [zap scrapping.ipynb](zap%20scrapping.ipynb), [data wrangling.ipynb](data%20wrangling.ipynb), [EDA.ipynb](EDA.ipynb) e [zap-modelling.ipynb](zap-modelling.ipynb).
 
-Criaremos um modelo que tentará prever se uma reserva de hotel será cancelada com base em cerca de 60 informações disponíveis sobre a reserva, como número de adultos, quantidade de diárias e tempo de estadia.
+Nosso cliente possui um imóvel situado na Avenida Oswaldo Cruz, Flamengo, RJ. Ele quer saber qual é o valor de venda desse imóvel. Para isso, coletamos dados no [zapimoveis.com.br](https://www.zapimoveis.com.br/) sobre outros apartamentos à venda na mesma região, e treinamos um modelo de Gradient Boosting para prever o valor do imóvel, com base em informações como área do imóvel, logradouro, número de quartos e vagas de garagem.
 
-**Se o hotel souber com antecedência quais são as reservas que têm alta probabilidade de serem canceladas, ele pode tomar medidas de marketing para evitar esse cancelamento (oferecendo alguma vantagem extra, por exemplo). Como cerca de 41% das reservas são canceladas, o projeto tem um grande potencial de retorno para o negócio.**
+Nosso modelo ótimo alcançou um erro absoluto médio aproximado de R$150 mil. Para dar dimensão, a média do valor dos imóveis em nosso dataset é de R$1,5 milhão.
+
+A previsão que o modelo fez para o imóvel de nosso cliente foi de R$1,18 milhão.
 
 ## Resumo do Projeto
 * Objetivo: criar um modelo de previsão da probabilidade de uma reserva de hotel ser cancelada.
