@@ -93,24 +93,22 @@ O processo de refinamento consiste em treinar diferentes modelos, que diferem pe
 
 Para buscar os melhores hiperparâmetros, utilizaremos o [Bayesian optimization](https://towardsdatascience.com/automated-machine-learning-hyperparameter-tuning-in-python-dfda59b72f8a). Nesse método, sorteamos aleatoriamente valores para os hiperparâmetros de acordo com uma distribuição de probabilidade. O Bayesian optimization utiliza iterativamente os resultados que vão sendo obtidos para explorar mais intensamente os intervalos de valores mais promissores, para cada hiperparâmetro. Assim, a cada novo modelo treinado, é atualizada a distribuição de probabilidade dos valores associados a cada hiperparâmetro. A implementação do Bayesian optimization que utilizaremos aqui é a do pacote [hyperopt](https://github.com/hyperopt/hyperopt).
 
-Após treinarmos 500 modelos diferentes, o melhor entre eles apresentou um MAE de R$21563 no conjunto de treinamento, média de R$137915 nos conjuntos de validação (utilizando N-fold cv) e R$152613 no conjunto de teste.
+Após treinarmos 500 modelos diferentes, o melhor entre eles apresentou um MAE de R$21.563,00 no conjunto de treinamento, média de R$137.915,00 nos conjuntos de validação (utilizando N-fold cv) e R$152.613,00 no conjunto de teste.
 
 O processo completo de refinamento também pode ser visto no arquivo [zap-modelling.ipynb](zap-modelling.ipynb).
 
 ## Avaliando Overfitting
-Nosso modelo alcançou um MAE de R$21563 no conjunto de treinamento, contra uma média de R$137915 nos conjuntos de validação (utilizando N-fold cv). Isso aponta que nosso modelo tem um certo grau de overfitting, uma vez que sua performance é consideravelmente melhor nos pontos em que foi treinado.
+Nosso modelo alcançou um MAE de R$21.563,00 no conjunto de treinamento, contra uma média de R$137.915,00 nos conjuntos de validação (utilizando N-fold cv). Isso aponta que nosso modelo tem um certo grau de overfitting, uma vez que sua performance é consideravelmente melhor nos pontos em que foi treinado.
 
 Para minimizar o overfitting podemos otimizar certos hiperparâmetros do XGBoosting com que ainda não trabalhamos, como o subsample. Outra estratégia para combater o problema é aumentar o tamanho de nosso conjunto de treinamento. Testaremos esses caminhos numa próxima etapa de iteração do projeto.
 
 ## Interpretação do modelo
-Para explicar quais são as decisões que o modelo toma para chegar às previsões, utilizei os valores SHAP, com a implementação da biblioteca [shap](https://github.com/slundberg/shap). Uma explicação sobre o que é o SHAP e a análise completa da explicabilidade de nosso modelo pode ser vista no arquivo [explainability.ipynb](explainability.ipynb).
+Para explicar quais são as decisões que o modelo toma para chegar às previsões, utilizei os valores SHAP, com a implementação da biblioteca [shap](https://github.com/slundberg/shap). Uma explicação sobre o que é o SHAP e a análise completa da explicabilidade de nosso modelo pode ser vista no arquivo [zap-modelling.ipynb](zap-modelling.ipynb).
 
 #### Importância de cada feature na previsão
-No gráfico abaixo são mostradas a importância que cada feature tem para a previsão que nosso modelo faz. Podemos ver que o fato da reserva ter sido feita sem depósito é a feature mais importante para nosso modelo chegar à previsão. Em seguida vem a feature que diz se o cliente é de Portugal. A terceira feature mais importante é a agência que vendeu a reserva. Por fim, temos o número total de pedidos especiais feitos na reserva, e o LeadTime (tempo entre o registro da reserva e a data da estadia).
+No gráfico abaixo são mostradas a importância que cada feature tem para a previsão que nosso modelo faz. Notamos que a área é, disparada, a feature mais importante para que nosso modelo faça a previsão de valor de venda de imóvel. Com muito menos importância, mas ainda sim importantes, temos o número de vagas de garagem. Em seguida, com igual importância, temos o valor de condomínio, IPTU, e o fato do imóvel estar (ou não) localizado na Avenida Rui Barbosa. A seguir, com um pouco menos importância, temos o número de banheiros e de dormitórios. As outras features informam se o imóvel está localizado em cada uma das ruas estudadas.
 
 <img src='feature_importances.png' width="500">
-
-Apesar das 5 features indicadas acima serem as mais importantes, vemos no gráfico abaixo que as outras features também influenciam de forma significativa o valor de SHAP de uma reserva e, consequentemente, a probabilidade de cancelamento calculada por nosso modelo.
 
 #### Explicando as decisões do modelo
 O gráfico abaixo dá uma visão geral das decisões que nosso modelo faz para chegar à previsão de um usuário. Cada linha representa uma feature diferente e deve ser lida separadamente.
@@ -118,12 +116,11 @@ O gráfico abaixo dá uma visão geral das decisões que nosso modelo faz para c
 <img src='summary_plot.png'>
 
 
-Listamos abaixo alguns dos insights obtidos nessa etapa do projeto, incluindo a análise do gráfico acima. A análise completa (e os respectivos gráficos) pode ser vista no arquivo [explainability.ipynb](explainability.ipynb).
+Listamos abaixo alguns dos insights obtidos nessa etapa do projeto, incluindo a análise do gráfico acima. A análise completa (e os respectivos gráficos) pode ser vista no arquivo [zap-modelling.ipynb](zap-modelling.ipynb).
 
-* Quando há um depósito com a reserva, nosso modelo diminui sutilmente a probabilidade de cancelamento. Em contrapartida, quando não houve depósito, a probabilidade de cancelamento aumenta drasticamente. Essa informação pode ser usada pelo hotel no seu business para evitar cancelamentos. Seria interessante estudar, por exemplo, se valeria a pena oferecer um desconto na diária do hotel, ou alguma outra vantagem, para reservas feitas com depósito.
-* Quando o cliente é português, a probabilidade de cancelamento da reserva tende a aumentar. Mas existem algumas Agências que neutralizam a influência de o cliente ser português sobre a previsão do modelo.
-* Existem agências que estão associadas a uma maior probabilidade de cancelamento.
-* Reservas que não possuem pedidos especiais tendem a ter maior probabilidade de cancelamento. Quando há um ou dois pedidos especiais, essa probabilidade diminui. Quando temos três, quatro ou cinco pedidos especiais, diminui ainda mais. Esse efeito é reforçado caso o cliente seja do segmento de mercado Online TA.
-* Quando temos um lead time de pouquíssimos dias, entre 0 e 5, a probabilidade de cancelamento é drasticamente diminuída. Para lead times maiores, entre 15 e 100 dias, o modelo não altera de forma consistente a previsão de probabilidade. A partir de 100 dias, um aumento no lead time tende a aumentar a previsão da probabilidade de cancelamento. Esse efeito é intensificado caso o cliente seja do segmento de mercado Online TA.
-* Quando um cliente nunca cancelou uma reserva antes, isso quase não afeta a probabilidade prevista pelo modelo. Mas caso ele já o tenha feito, a probabilidade de cancelamento da reserva aumenta muito.
-* Se um cliente não requisitou vaga de estacionamento, a previsão do modelo quase não sofre alteração. Mas no caso da vaga de estacionamento ter sido requisitada, a probabilidade de cancelamento cai drasticamente.
+* Temos uma correlação positiva: quanto maior é a área do imóvel, maior é a previsão de valor de venda encontrada por nosso modelo.
+* Quando não há vagas de garagem (em azul, no gráfico acima), a previsão de valor é diminuída. Quando há 1 vaga (cluster roxo), a previsão é suavemente aumentada. Para mais vagas, temos maiores aumentos na previsão do modelo. Um outro efeito interessante é que, caso o imóvel não possua vagas de garagem, a diminuição na previsão que nosso modelo faz é mais intensa para imóveis de maior área.
+* Valores baixos de condomínio tendem a fazer a previsão do nosso modelo diminuir. Em contrapartida, valores altos de condomínio não geram um aumento ou diminuição consistente de previsão do modelo.
+* Nosso modelo atribui um valor premium a imóveis localizados na Avenida Rui barbosa. Imóveis que não estão localizados na Rui Barbosa sofrem uma diminuição de previsão de nota, e imóveis que lá estão têm sua previsão aumentada. Um efeito interessante é que apartamentos com grandes áreas sofrem uma penalização maior na previsão de nosso modelo por não estarem localizados na Rui Barbosa, se comparados a imóveis de menores áreas.
+* Quanto maior o número de banheiros, maior a previsão de nosso modelo. Outro efeito interessante é que quando um imóvel possui 3 ou 4 banheiros, o aumento da previsão do modelo é mais intenso para imóveis de menor área. Em outras palavras, esses imóveis "compensam" sua menor área pela presença de um banheiro extra.
+* Nosso modelo diminui fortemente a previsão de valor para imóveis que possuem apenas um quarto.
