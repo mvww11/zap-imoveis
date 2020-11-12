@@ -34,8 +34,8 @@ Escolhemos coletar apenas imóveis situados na própria Avenida Oswaldo Cruz ou 
 As features que conseguimos extrair são:
 |Variável                       |Tipo     |Descrição |
 |:------------------------------|:---------|:-----------|
-|Price                          |float     | valor de venda anunciado do imóvel |
-|Address                      |string    | logradouro onde o imóvel está situado |
+|Price                          |float     | Valor de venda anunciado do imóvel, em R$ |
+|Address                      |string    | Logradouro onde o imóvel está situado |
 |Area                         |float    | Área do imóvel, em m²|
 |Baths                        |int | Quantidade de banheiros no imóvel |
 |Condominio             |float | Valor da cota de condomínio do imóvel, em R$ |
