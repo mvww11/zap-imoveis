@@ -86,7 +86,7 @@ Na imagem abaixo podemos verificar que as distribuições de preços do conjunto
 ## Benchmark
 Um modelo inicial foi treinado com xgboost, usando os hiperparâmetros default. 
 
-Nosso modelo de benchmark alcançou um MAE de R$155623 e um RMSE de  R$225648.
+Nosso modelo de benchmark alcançou um MAE de R$155.623,00 e um RMSE de R$225.648,00 no conjunto de validação (média para os conjuntos de validação do N-fold cross validation).
 
 ## Refinamento do modelo
 O processo de refinamento consiste em treinar diferentes modelos, que diferem pelos seus hiperparâmetros, e utilizar nosso conjunto de validação para verificar qual dos modelos faz a melhor previsão. Compararemos a qualidade dos modelos pela métrica MAE, de modo a não punir o algoritmo por errar imóveis cujo preço fosse anormalmente alto ou baixo.
