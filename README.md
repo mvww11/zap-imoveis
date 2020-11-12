@@ -108,12 +108,12 @@ Para explicar quais são as decisões que o modelo toma para chegar às previsõ
 #### Importância de cada feature na previsão
 No gráfico abaixo são mostradas a importância que cada feature tem para a previsão que nosso modelo faz. Notamos que a área é, disparada, a feature mais importante para que nosso modelo faça a previsão de valor de venda de imóvel. Com muito menos importância, mas ainda sim importantes, temos o número de vagas de garagem. Em seguida, com igual importância, temos o valor de condomínio, IPTU, e o fato do imóvel estar (ou não) localizado na Avenida Rui Barbosa. A seguir, com um pouco menos importância, temos o número de banheiros e de dormitórios. As outras features informam se o imóvel está localizado em cada uma das ruas estudadas.
 
-<img src='feature_importances.png' width="500">
+<img src='images/feature_importances.png' width="500">
 
 #### Explicando as decisões do modelo
 O gráfico abaixo dá uma visão geral das decisões que nosso modelo faz para chegar à previsão de um usuário. Cada linha representa uma feature diferente e deve ser lida separadamente.
 
-<img src='summary_plot.png'>
+<img src='images/summary_plot.png'>
 
 
 Listamos abaixo alguns dos insights obtidos nessa etapa do projeto, incluindo a análise do gráfico acima. A análise completa (e os respectivos gráficos) pode ser vista no arquivo [zap-modelling.ipynb](zap-modelling.ipynb).
