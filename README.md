@@ -71,31 +71,29 @@ Abaixo estão ilustrados alguns insights observados na Análise Exploratória. A
 <img src='images/price_kde_hue_street.png'>
 <img src='images/price_kde_oswaldocruz.png'>
 
-## Data Leakage
-Algumas features de nosso data set foram eliminadas antes do treinamento do modelo, para evitar data leakage. Por exemplo, a coluna 'ReservationStatus' ( que possui 3 valores possíveis: 'cancelled', 'no-show', 'check-out') determina completamente se a reserva foi cancelada ou não. Entretanto, quando o modelo for colocado em produção, ele tentará prever se a reserva será cancelada ANTES de termos a informação sobre o 'ReservationStatus'. Por isso, nosso modelo não pode usar essa informação no treinamento. O mesmo vale para a coluna 'ReservationStatusDate' e para a coluna 'AssignedRoomType'. Logo, essas 3 colunas foram eliminadas da análise.
-
 ## Modelagem e split dos dados
-Usaremos um modelo de Gradient Boosting com a implementação da biblioteca xgboost. O processo completo de modelagem pode ser visto no arquivo [modeling.ipynb](modeling.ipynb).
+Usaremos um modelo de Gradient Boosting com a implementação da biblioteca xgboost. O processo completo de modelagem pode ser visto no arquivo [zap-modelling.ipynb](zap-modelling.ipynb).
 
-Faremos um split de 60/20/20% dos dados em conjuntos de treinamento, validação e teste, respectivamente. O conjunto de treinamento será aquele em que ajustaremos os parâmetros treináveis de nosso modelo. Como treinaremos vários modelos, que diferem por seus hiperparâmetros, usaremos o conjunto de validação avaliar qual é o melhor entre eles. Já o conjunto de teste será usado uma única vez no final do projeto para estimar a performance que o modelo terá em produção. Desse modo, o conjunto de teste será composto de pontos nunca vistos pelo modelo durante seu treinamento e refinamento.
+A feature Street, que informa o logradouro do imóvel, é uma variável categórica. Transformamos essa variável em dummie, criando 11 colunas (uma para cada rua estudada).
 
-A métrica que usaremos para avaliar qual é o melhor modelo será a área sob a curva ROC, conhecida como AUC (area under curve). Quanto maior o valor dessa métrica, melhor é o trade-off que teremos entre positivos verdadeiros e positivos falsos (i.e., entre o modelo acertar quais reservas serão canceladas e não errar as reservas não seriam canceladas).
+Fizemos um split de 70/30% dos dados em conjuntos de treinamento e teste, respectivamente. O conjunto de treinamento será aquele em que ajustaremos os parâmetros treináveis de nosso modelo. Evitamos usar um conjunto dedicado para validação, pois não queríamos diminuir ainda mais nosso training set. Por isso, optamos por usar o N-fold cross validation para otimizar os hiperparâmetros. Já o conjunto de teste será usado uma única vez no final do projeto para estimar a performance que o modelo tem em pontos novos. Desse modo, o conjunto de teste será composto de pontos nunca vistos pelo modelo durante seu treinamento e refinamento.
+
+Na imagem abaixo podemos verificar que as distribuições de preços do conjunto de treinamento e de teste são similares.
+<img src='images/train-test.png'>
 
 ## Benchmark
-Um modelo inicial foi treinado com xgboost, usando os hiperparâmetros default. Para não precisar tratar o número de árvores no modelo como um hiperparâmetro a ser otimizado, definimos que interromperíamos o treinamento quando nossa métrica de auc não apresentasse melhora por 30 árvores seguidas (early_stopping_rounds).
+Um modelo inicial foi treinado com xgboost, usando os hiperparâmetros default. 
 
-Nosso modelo de benchmark alcançou um AUC de 0.946 e um Recall de 82.54%. Ou seja, o modelo previu corretamente 82.54% das reservas que seriam canceladas.
+Nosso modelo de benchmark alcançou um MAE de R$155623 e um RMSE de  R$225648.
 
 ## Refinamento do modelo
-O processo de refinamento consiste em treinar diferentes modelos, que diferem pelos seus hiperparâmetros, e utilizar nosso conjunto de validação para verificar qual dos modelos faz a melhor previsão. Compararemos a qualidade dos modelos pela métrica do AUC.
+O processo de refinamento consiste em treinar diferentes modelos, que diferem pelos seus hiperparâmetros, e utilizar nosso conjunto de validação para verificar qual dos modelos faz a melhor previsão. Compararemos a qualidade dos modelos pela métrica MAE, de modo a não punir o algoritmo por errar imóveis cujo preço fosse anormalmente alto ou baixo.
 
 Para buscar os melhores hiperparâmetros, utilizaremos o [Bayesian optimization](https://towardsdatascience.com/automated-machine-learning-hyperparameter-tuning-in-python-dfda59b72f8a). Nesse método, sorteamos aleatoriamente valores para os hiperparâmetros de acordo com uma distribuição de probabilidade. O Bayesian optimization utiliza iterativamente os resultados que vão sendo obtidos para explorar mais intensamente os intervalos de valores mais promissores, para cada hiperparâmetro. Assim, a cada novo modelo treinado, é atualizada a distribuição de probabilidade dos valores associados a cada hiperparâmetro. A implementação do Bayesian optimization que utilizaremos aqui é a do pacote [hyperopt](https://github.com/hyperopt/hyperopt).
 
-Como o pacote [hyperopt](https://github.com/hyperopt/hyperopt) precisa de uma função para MINIMIZAR, vamos definí-la como 1 - AUC. Assim, minimizando o AUC, estamos maximizando o AUC.
+Após treinarmos 500 modelos diferentes, o melhor entre eles apresentou um MAE de R$21563 no conjunto de treinamento, média de R$137915 nos conjuntos de validação (utilizando N-fold cv) e R$152613 no conjunto de teste.
 
-Após treinarmos 320 modelos diferentes, o melhor entre eles apresentou um AUC de 0.952 e um Recall de 83.42%.
-
-O processo completo de refinamento também pode ser visto no arquivo [modeling.ipynb](modeling.ipynb).
+O processo completo de refinamento também pode ser visto no arquivo [zap-modelling.ipynb](zap-modelling.ipynb).
 
 ## Avaliando Overfitting
 nosso modelo alcançou um f1_score de 96.62% no conjunto de treinamento, contra 85.26% no conjunto de validação. Isso aponta que nosso modelo tem um certo grau de overfitting, uma vez que sua performance é consideravelmente melhor nos pontos em que foi treinado.
