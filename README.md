@@ -56,19 +56,20 @@ Após extrair os dados, precisei fazer uma série de transformações para que f
 * Removi cerca de 100 apartamentos que não possuíam informações sobre Quantidade de banheiros, quartos, ou valor do condomínio.
 * Após o Data Cleaning, ficamos com 1922 apartamentos em nosso data set.
 
-## Análise Exploratória de Dados e Feature Engineering
-Após o tratamento de missing data, ficamos com 78879 data points. Entre essas reservas, 41% foram canceladas. Isso indica que o cancelamento de reservas tem um impacto muito grande no business. Se conseguirmos diminuir esse percentual, o potencial de geração de lucro para o negócio é enorme.
+## Análise Exploratória de Dados
+Fizemos uma análise exploratória de dados com os 1922 restantes em nosso data set.
 
-Abaixo estão ilustrados alguns insights observados na Análise Exploratória, e as Feature Engineering realizadas. A análise completa está no arquivo [EDA.ipynb](EDA.ipynb).
-* A proporção de cancelamentos era maior em reservas feitas por clientes de Portugal.
-* A proporção de cancelamentos era menor em reservas feitas por clientes da União Europeia que não de Portugal.
-* As duas informações acima me levaram a fazer 2 Feature Engineering: **isPRT**: a reserva foi feita por um cliente de Portugal? **isEU**: a reserva foi feita por um cliente da união Europeia? Confira o gráfico abaixo.
-* 40% das reservas possuíam algum tipo de pedido especial, e tinham uma taxa de cancelamento 2.5x menor que reservas sem nenhum pedido especial.
-* Reservas que possuíam apenas dias de final de semana tinham uma taxa de cancelamento menor
-* A informação acima me levou a criar a seguinte feature: **isOnlyWeekend**: a reserva possui apenas dias de final de semana?
-<img src='isPRT_cancel.png' width="400">
-
-
+Abaixo estão ilustrados alguns insights observados na Análise Exploratória. A análise completa está no arquivo [EDA.ipynb](EDA.ipynb).
+* O preço do imóvel (nossa variação dependente) possui assimetria positiva (ver gráfico abaixo). Sua mediana é de R\$ 1,15 milhão.
+* Removemos cerca de 160 outliers de preço (imóveis anormalmente mais caros). 90% deles estavam na Avenida Rui Barbosa.
+* O Preço do imóvel e sua área têm relação aproximadamente linear, principalmente para apartamentos com até 100m² de área.
+* Cerca de 70% dos apartamentos anunciados possuem 2 ou 3 quartos.
+* Cerca de metade dos apartamentos anunciados possuem 1 vaga de varagem.
+* Apartamentos na Rua Marquês de Abrantes e Senador Vergueiro possuem distribuição de preços similares entre si, mas bastante diferentes dos apartamentos da Avenida Oswaldo Cruz (ver imagem abaixo).
+* A distribuição de preços na Avenida Oswaldo Cruz parece ser a superposição de duas distribuições individuais. Análises mais aprofundadas mostraram que essas distribuições são as distribuições de apartamentos de 2 quartos, e de 3 quartos (ver imagem abaixo).
+<img src='images/preco.png'>
+<img src='images/price_kde_hue_street.png'>
+<img src='images/price_kde_oswaldocruz.png'>
 
 ## Data Leakage
 Algumas features de nosso data set foram eliminadas antes do treinamento do modelo, para evitar data leakage. Por exemplo, a coluna 'ReservationStatus' ( que possui 3 valores possíveis: 'cancelled', 'no-show', 'check-out') determina completamente se a reserva foi cancelada ou não. Entretanto, quando o modelo for colocado em produção, ele tentará prever se a reserva será cancelada ANTES de termos a informação sobre o 'ReservationStatus'. Por isso, nosso modelo não pode usar essa informação no treinamento. O mesmo vale para a coluna 'ReservationStatusDate' e para a coluna 'AssignedRoomType'. Logo, essas 3 colunas foram eliminadas da análise.
